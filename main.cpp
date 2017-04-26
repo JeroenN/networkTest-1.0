@@ -44,7 +44,7 @@ int main()
                 socket.receive(buffer,sizeof(buffer), received, rIp, port);
                 if(received >0)
                 {
-                    std::cout<<rIp<<" connected \n";
+                    std::cout<<"connected \n";
                     computerID[port] = rIp;
                 }
                 std::cin >> answer;
@@ -82,7 +82,5 @@ int main()
             }
         }
     }
-    system("pause");
-
     return 0;
 }
